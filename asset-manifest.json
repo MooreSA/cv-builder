@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MooreSA/cv-builder/static/css/main.514dc062.chunk.css",
-    "main.js": "/MooreSA/cv-builder/static/js/main.e208e9b7.chunk.js",
-    "main.js.map": "/MooreSA/cv-builder/static/js/main.e208e9b7.chunk.js.map",
-    "runtime-main.js": "/MooreSA/cv-builder/static/js/runtime-main.c47911d0.js",
-    "runtime-main.js.map": "/MooreSA/cv-builder/static/js/runtime-main.c47911d0.js.map",
-    "static/js/2.0c061bff.chunk.js": "/MooreSA/cv-builder/static/js/2.0c061bff.chunk.js",
-    "static/js/2.0c061bff.chunk.js.map": "/MooreSA/cv-builder/static/js/2.0c061bff.chunk.js.map",
-    "index.html": "/MooreSA/cv-builder/index.html",
-    "static/css/main.514dc062.chunk.css.map": "/MooreSA/cv-builder/static/css/main.514dc062.chunk.css.map",
-    "static/js/2.0c061bff.chunk.js.LICENSE.txt": "/MooreSA/cv-builder/static/js/2.0c061bff.chunk.js.LICENSE.txt"
+    "main.css": "/cv-builder/static/css/main.514dc062.chunk.css",
+    "main.js": "/cv-builder/static/js/main.e208e9b7.chunk.js",
+    "main.js.map": "/cv-builder/static/js/main.e208e9b7.chunk.js.map",
+    "runtime-main.js": "/cv-builder/static/js/runtime-main.e83ff1ae.js",
+    "runtime-main.js.map": "/cv-builder/static/js/runtime-main.e83ff1ae.js.map",
+    "static/js/2.0c061bff.chunk.js": "/cv-builder/static/js/2.0c061bff.chunk.js",
+    "static/js/2.0c061bff.chunk.js.map": "/cv-builder/static/js/2.0c061bff.chunk.js.map",
+    "index.html": "/cv-builder/index.html",
+    "static/css/main.514dc062.chunk.css.map": "/cv-builder/static/css/main.514dc062.chunk.css.map",
+    "static/js/2.0c061bff.chunk.js.LICENSE.txt": "/cv-builder/static/js/2.0c061bff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c47911d0.js",
+    "static/js/runtime-main.e83ff1ae.js",
     "static/js/2.0c061bff.chunk.js",
     "static/css/main.514dc062.chunk.css",
     "static/js/main.e208e9b7.chunk.js"
