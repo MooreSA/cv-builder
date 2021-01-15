@@ -1,0 +1,28 @@
+.display-section {
+    padding: 10px;
+
+    &__header {
+        font-size: $font-size * 1.75;
+        opacity: 70%;
+    }
+
+    &__info {
+        margin: 5px auto;
+        background-color: $elevate-2-color;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    &__detail {
+        padding: 2px;
+
+        &--emphasis {
+            font-size: $font-size * 1.2;
+            font-weight: bold;
+        }
+
+        &--small {
+            font-size: $font-size * 0.9;
+        }
+    }
+}

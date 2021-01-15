@@ -1,0 +1,10 @@
+.header {
+    text-align: center;
+
+    background-color: $elevate-1-color;
+    padding: 10px;
+
+    &__title {
+        font-size: $font-size * 2;
+    }
+}

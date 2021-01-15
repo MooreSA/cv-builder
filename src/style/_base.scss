@@ -1,0 +1,24 @@
+$base-color: #212121;
+$elevate-1-color: #424242;
+$elevate-2-color: #616161;
+$elevate-3-color: #757575;
+
+$font-fam: 'Asap', sans-serif;
+$font-color: #FAFAFA;
+$font-size: 16px;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: $font-color;
+    font-family: $font-fam;
+}
+
+body, html {
+    height: 100%
+}
+
+body {
+    background-color: $base-color;
+}
