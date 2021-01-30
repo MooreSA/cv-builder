@@ -9,7 +9,7 @@ const EduItem = (props) => {
     <div className="display-section__info" id={`edu-${eduIndex}`}>
       <div className="display-section__detail">{schoolName}</div>
       <div className="display-section__detail">{studyTitle}</div>
-      <div className="display-section__detail display-section__detail--small">{eduStartDay} - {eduEndDay}</div>
+      <div className="display-section__detail display-section__detail--small">{`${eduStartDay} - ${eduEndDay}`}</div>
     </div>
   );
 };

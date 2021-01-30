@@ -1,11 +1,67 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/NunitoSans-Regular.ttf')
+}
+
+@mixin flex-item($direction, $wrap) {
+    display: flex;
+
+    flex-flow: $direction $wrap;
+}
+
+@mixin shadowbox($right, $down, $spread, $blur, $color) {
+    -webkit-box-shadow: $right $down $spread $blur $color;
+    box-shadow: $right $down $spread $blur $color;
+}
+
+@mixin btn($btn-color, $bg-color) {
+    background-color: $btn-color;
+    border: 1px solid darken($btn-color, 5);
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        @include shadowbox(0, 0, 5px, 1px, mix($btn-color, $bg-color))
+    }
+    &:active {
+        box-shadow: inset 0 0 1px 1px darken($btn-color, 10);
+    }
+}
+
+@mixin link($font-color) {
+    text-decoration: none;
+    color: $font-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:link, &:visited {
+        color: $font-color;
+    }
+}
+
 $base-color: #212121;
 $elevate-1-color: #424242;
 $elevate-2-color: #616161;
 $elevate-3-color: #757575;
 
-$font-fam: 'Asap', sans-serif;
-$font-color: #FAFAFA;
-$font-size: 16px;
+
+$color-base: #f0f2ec;
+$color-light-accent: #7b7c6b;
+$color-brand: #748ea4;
+$color-dark-accent: #756670;
+$color-dark: #253c40;
+
+
+$color-primary: #748ea4;
+$color-info: #243c40;
+$color-success: #58a569;
+$color-warnng: #d59531;
+$color-danger: #f44336;
+
+
+$font-fam: Nunito, sans-serif;
+$font-color: $color-base;
+$font-size: 14px;
 
 * {
     box-sizing: border-box;
@@ -15,10 +71,10 @@ $font-size: 16px;
     font-family: $font-fam;
 }
 
-body, html {
+body, html, #root {
     height: 100%
 }
 
 body {
-    background-color: $base-color;
+    background-color: $color-dark;
 }

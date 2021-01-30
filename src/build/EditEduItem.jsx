@@ -16,7 +16,7 @@ const EditEduItem = (props) => {
 
   return (
     <form className="build-section">
-      <h3 className="build-section__header">Education - {parseInt(eduIndex, 10) + 1}</h3>
+      <h3 className="build-section__header">{`Education - ${parseInt(eduIndex, 10) + 1}`}</h3>
       <div className="build-section__field">
         <label className="build-section__label" htmlFor="school-input">School Name:</label>
         <input

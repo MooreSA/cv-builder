@@ -3,17 +3,21 @@
 
     &__header {
         font-size: $font-size * 1.75;
-        opacity: 70%;
+        color: $color-base;
+        font-family: 'Arial', 'Calibri', 'Helvetica';
     }
 
     &__info {
         margin: 5px auto;
-        background-color: $elevate-2-color;
+        font-family: 'Arial', 'Calibri', 'Helvetica';
+        background-color: $color-dark-accent;
+        box-shadow: (-1px 1px 1px 1px $color-light-accent);
         border-radius: 5px;
         padding: 10px;
     }
 
     &__detail {
+        font-family: 'Arial', 'Calibri', 'Helvetica';
         padding: 2px;
 
         &--emphasis {

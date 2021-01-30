@@ -1,0 +1,93 @@
+.form {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 1000px;
+    max-width: 90%;
+
+    display: grid;
+    grid-template-rows: auto;
+
+    &--shown {
+        transition:
+            opacity 1000ms ease-in 500ms,
+            height 1000ms ease-in 500ms;
+        height: auto;
+        opacity: 1;
+    }
+
+    &--hidden {
+        transition: 
+            opacity 500ms ease-in 0ms,
+            height 500ms ease-in 0ms;
+        animation: hideForm 1s ease 0s 1 forwards;
+        opacity: 0;
+        height: 0;
+    }
+
+    &__header {
+        font-size: $font-size * 2.5;
+        text-align: center;
+    }
+
+    &__inputs {
+        background-color: $color-dark-accent;
+        box-shadow: -1px 1px 1px 1px mix($color-dark-accent, $color-dark);
+        border-radius: 5px;
+        padding: 30px 10px;
+    }
+
+    &__field {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin-top: 5px;
+    }
+
+    &__label {
+        font-size: $font-size * 1.25;
+        padding-right: 5px;
+        text-align: right;
+    }
+
+    &__input {
+        padding: 5px 10px;
+        width: auto;
+        color: $base-color;
+    }
+
+    &__btns {
+        @include flex-item(row, nowrap);
+        justify-content: center;
+    }
+
+    &__continue {
+        @include btn($color-success, $color-dark-accent);
+    }
+
+    &__more {
+        @include btn($color-brand, $color-dark-accent);
+    }
+    &__back {
+        @include btn($color-danger, $color-dark-accent);
+    }
+
+    &__back, &__more, &__continue {
+        color: $base-color;
+        margin: 5px;
+        padding: 10px;
+        font-size: $font-size * 1.25;
+    }
+}
+
+@keyframes hideForm {
+    99% {
+        visibility: initial;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
